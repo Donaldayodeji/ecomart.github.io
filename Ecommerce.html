@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/Ecommerce.css">
+
+
+    <style>
+        body {
+            background-color: white;
+            font-family: cursive;
+        }
+
+
+        .background {
+            background-image: url("./Images/1679018465457.jpg");
+            background-attachment: fixed;
+            margin-left: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0.375);
+        }
+
+        .background-text {
+            margin-left: 150px;
+            padding-right: 150px;
+            background-color: rgba(0, 0, 0, 0.447);
+
+        }
+
+        .navbar-collapse li:hover {
+            border-bottom: 4px solid gold;
+            border-radius: 20px 0px 0px 20px;
+       font-size: 23px;
+       color: gold;
+            padding-bottom: 0px;
+        }
+
+        .img {
+            padding: 40px;
+            box-shadow: 16px 2px 20px 0px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 2rem;
+margin: 0;
+        }
+
+        .card-single {
+            display: flex;
+            justify-content: space-between;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 2px;
+            width: 265px;
+            margin-top: 2rem;
+            box-shadow: 16px 2px 20px 0px;
+            margin: 0;
+
+
+        }
+
+        .navbar-collapse li{
+            
+        padding-top: 0px;
+            padding-left: 5px;
+            font-size: 20px;
+        }
+
+.eco-mart{
+    background-image: url("./Images/1679018446955.jpg");
+    padding-top: 150px;
+    padding-bottom: 200px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.292);
+}
+.eco-mart h2{
+    width: fit-content;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    margin-left: 450px;
+    background-color: rgba(0, 0, 0, 0.463);
+}
+.eco-mart h4{
+    margin-left: 640px;
+    padding: 15px;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.063);
+    border: 0px solid green;
+    border-radius: 20px;
+    width: fit-content;
+}
+.navbar{
+    margin-top: 50px;
+}
+
+.container-fluid p{
+    font-style: oblique;
+}
+
+.link{
+    font-style: normal;
+}
+
+.logo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+main{
+    border: 3px sol;
+}
+
+
+
+        @media screen and (min-width:100px) and (max-width:800px) {
+            .background {
+               
+                background-size: cover;
+                padding-top: 150px;
+            }
+
+            .background-text {
+                margin: 0;
+                padding: 0;
+                padding-right: 70px;
+                padding-left: 20px;
+            }
+
+            .background-text h1 {
+                font-size: 30px;
+            }
+
+            .cards {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .dee{
+                display: flex;
+                flex-direction: column;
+            }
+            .eco-mart{
+                padding-top: 100px;
+                padding-bottom: 150px;
+            }
+            .eco-mart h4{
+                margin: 0;
+                margin-left: 150px;
+            }
+            .eco-mart h2{
+                margin: 0;
+                margin-left: 60px;
+            }
+            .bottom{
+                display: flex;
+                flex-direction: column;
+            }
+            .bottom img{
+                width: 400px;
+            }
+
+        }
+
+
+        @media screen and (min-width:800px) and (max-width:1200px) {
+.cards{
+    display: none;
+}
+.dee{
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+            
+        }
+    </style>
+</head>
+
+<body>
+
+<div>
+        <div class="logo">
+            <h3 class="bg-warning fs-2 py-2 px-4 fixed-top">Eco mart</h3>
+        </div>  
+</div>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light   py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand px-5 bg-warning text-white fs-4" href="#">All Categories</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+
+                    <li class="nav-item mx-3">
+                        <a class="nav-link " aria-current="page" href="./shirts.html">Shirts</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" aria-current="page" href="./Top.html">Tops</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link " aria-current="page" href="./Jackets.html">Jackets</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link " aria-current="page" href="./Trousers.html">Trousers</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link " aria-current="page" href="./Sweaters.html">Sweaters</a>
+                    </li>
+
+
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="background">
+        <div class="background-text py-5">
+            <h1>TOP DEAL TODAY!<br>SMART PHONE</h1><br>
+            <p>Get up to <b class="text-warning">80% </b> off Today only</p>
+            <button type="button" class="btn btn-warning">Shop Now</button>
+        </div>
+    </div>
+
+
+    <br>
+
+
+    <main>
+        
+        <h2 class=" text-center"><b>SUPER DEALS</b> </h2>
+        <div class="cards px-5 py-5">
+            <div class="card-single">
+
+                <div>
+                    <h1 class="text-warning">$54</h1>
+                    <span>SHIRTS</span>
+
+                    <span class="las la-users"></span>
+                </div>
+            </div>
+
+
+            <div class="cards">
+                <div class="card-single">
+                    <div>
+                        <h1 class="text-warning">$30</h1>
+                        <span>TOP</span>
+
+                        <span class="las la-users"></span>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="card-single">
+                        <div>
+                            <h1 class="text-warning">$120</h1>
+                            <span>JACKET</span>
+
+                            <span class="las la-users"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="cards">
+                        <div class="card-single">
+                            <div>
+                                <h1 class="text-warning">$80</h1>
+                                <span>TROUSER</span>
+
+                                <span class="las la-users"></span>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="card-single">
+                                <div>
+                                    <h1 class="text-warning">$100</h1>
+                                    <span>SWEATERS</span>
+
+                                    <span class="las la-users"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </main>
+    </div><br><br>
+    <div class="product">
+
+        <h2 class="text-center"><b> PRODUCTS</b> </h2>
+    </div>
+
+    <div class="container d-flex py-5 px-5" style="width: 100%;">
+        <div class="dee d-flex">
+            <img src="./Images/1679018557699.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679018546796.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679018551540.jpg" class="img" width="400px" alt="">
+        </div>
+
+    </div>
+    <div class="container d-flex py-5 px-5" style="width: 100%;">
+        <div class="dee d-flex">
+            <img src="./Images/1679018840836.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679018625179.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679018690736.jpg" class="img" width="400px" alt="">
+        </div>
+    </div>
+
+    <div class="container d-flex py-5 px-5" style="width: 100%;">
+        <div class="dee d-flex">
+            <img src="./Images/top.jpg" class="img" width="400px" alt="">
+            <img src="./Images/sweater1.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679019236139.jpg" class="img" width="400px" alt="">
+        </div>
+    </div>
+
+
+    <div class="container d-flex py-5 px-5" style="width: 100%;">
+        <div class="dee d-flex">
+            <img src="./Images/1679019228145.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679019182222.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679019173187.jpg" class="img" width="400px" alt="">
+        </div>
+    </div>
+
+    <div class="container d-flex py-5 px-5" style="width: 100%;">
+        <div class="dee d-flex">
+            <img src="./Images/1679019166533.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679019159243.jpg" class="img" width="400px" alt="">
+            <img src="./Images/Jacket.jpg" class="img" width="400px" alt="">
+        </div>
+    </div>
+
+    <div class="container d-flex py-5 px-5" style="width: 100%;">
+        <div class="dee d-flex">
+            <img src="./Images/Dope.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679019019216.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679019014756.jpg" class="img" width="400px" alt="">
+        </div>
+    </div>
+    <div class="container d-flex py-5 px-5" style="width: 100%;">
+        <div class="dee d-flex">
+            <img src="./Images/1679019009674.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679018997672.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679018985348.jpg" class="img" width="400px" alt="">
+        </div>
+    </div>
+    <div class="container d-flex py-5 px-5" style="width: 100%;">
+        <div class="dee d-flex">
+            <img src="./Images/1679018557699.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679018976659.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679018914326.jpg" class="img" width="400px" alt="">
+        </div>
+    </div>
+
+    <div class="container d-flex py-5 px-5" style="width: 100%;">
+        <div class="dee d-flex">
+            <img src="./Images/1679018904732.jpg" class="img" width="400px" alt="">
+            <img src="./Images/Trouser.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679018843261.jpg" class="img" width="400px" alt="">
+        </div>
+    </div>
+    <div class="container d-flex py-5 px-5" style="width: 100%;">
+        <div class="dee d-flex">
+            <img src="./Images/1679018840836.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679018828698.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679018782474.jpg" class="img" width="400px" alt="">
+        </div>
+    </div>
+
+    <div class="container d-flex py-5 px-5" style="width: 100%;">
+        <div class="dee d-flex">
+            <img src="./Images/1679018760453.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679018723474.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679018696874.jpg" class="img" width="400px" alt="">
+        </div>
+    </div>
+
+    <div class="container d-flex py-5 px-5" style="width: 100%;">
+        <div class="dee d-flex">
+            <img src="./Images/1679018690736.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679018682835.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679018625179.jpg" class="img" width="400px" alt="">
+        </div>
+    </div>
+    <div class="container d-flex py-5 px-5" style="width: 100%;">
+        <div class="dee d-flex">
+            <img src="./Images/1679018619361.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679018591703.jpg" class="img" width="400px" alt="">
+            <img src="./Images/1679018557699.jpg" class="img" width="400px" alt="">
+
+        </div>
+    </div>
+
+
+
+
+    <div class="container d-flex justify-content-evenly py-5" style="width: 70%;">
+        <div class="bottom d-flex">
+        <div class="my-5">
+        <h2> Our Services</h2> We Pride Ourself as the most distinguished and most reliable <br> online shopping arena we have a...
+             lot of clothing material and <br> high class cloths at cheap prizes and different sizes
+            <br>...Buy from us now and get one free clothes ,we have the best cloth in Nigeria and Africa in general.
+            we hop you do enjoy shopping from us..Have a great day 
+
+        </div>
+            <img src="./Images/1679018475903.jpg" width="50%" alt="">
+    </div>
+</div>
+    <div class="eco-mart text-center text-white">
+        <h4>Just for you</h4>
+        <h2 class="fs-1"> Eco mart Shopping Website</h2>
+       <a href="./Ecommerce.html">  <br><button class="text-white btn btn-warning  me-5">Scroll up</button></a>
+        </div>
+
+
+        
+
+        <div class="container-fluid py-5 d-flex justify-content-between">
+            <h2 class=""> ECO MART</h2>
+            <p class="pe-5"> <a class="link pe-5" href="./ecomart.html">go to login page</a> <a class="pe-5"> 
+                Terms and Conditions</a> <a class="pe-5">Privacy Policy</a> </p>
+        </div>
+</body>
+
+</html>
